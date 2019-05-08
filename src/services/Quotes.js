@@ -1,5 +1,5 @@
-export const getQuotes = (char, num) => {
-  return fetch(`https://cors-anywhere.herokuapp.com/https://futuramaapi.herokuapp.com/api/characters/${char}/${num}`, {
+export const getQuotes = () => {
+  return fetch('https://neelpatel05.pythonanywhere.com/', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Element from '../element/Element';
 
 
 export default class Home extends React.PureComponent {
@@ -8,18 +9,17 @@ export default class Home extends React.PureComponent {
     fetchQuotes: PropTypes.func.isRequired
   }
   componentDidMount() {
-    this.props.fetchQuotes('bender', 3);
+    this.props.fetchQuotes();
 
   }
   render() {
+    console.log(this.props.quotes);
     const listOfQuotes = this.props.quotes.map(quote => {
       return (
-        <li key={quote.quote}>
-          <p> {quote.quote}</p>
-        </li>
+        <Element element={quote}  key={quote.symbol}/>
       );
     });
-    
+
     return (
       <>
         <h1>Hello World </h1>

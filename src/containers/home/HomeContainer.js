@@ -10,7 +10,10 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
   fetchQuotes(character, number) {
     dispatch(fetchQuoteAction(character, number));
-  }
+  },
+  // showMore() {
+  //   dispatch()
+  // }
 });
 
 
