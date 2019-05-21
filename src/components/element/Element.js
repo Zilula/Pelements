@@ -10,8 +10,8 @@ export default function Element({ element }) {
     font-family: ‘Muli’, sans-serif;
     color: white;
     background: black;
-    margin: .5em;
-    width: 6em;
+    margin: .2em;
+    width: 3em;
     height: max-content;
     content: "+"; 
 `;

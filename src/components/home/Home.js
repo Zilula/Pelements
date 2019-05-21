@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Element from '../element/Element';
+import styles from './Home.css';
 
 
 export default class Home extends React.PureComponent {
@@ -16,16 +17,16 @@ export default class Home extends React.PureComponent {
     console.log(this.props.quotes);
     const listOfQuotes = this.props.quotes.map(quote => {
       return (
-        <Element element={quote}  key={quote.symbol}/>
+        <Element element={quote} key={quote.symbol} />
       );
     });
 
     return (
       <>
-        <h1>Hello World </h1>
-        <ul>
+        <h1> Periodic Table </h1>
+        <div className={styles.div}>
           {listOfQuotes}
-        </ul>
+        </div>
       </>
     );
   }
