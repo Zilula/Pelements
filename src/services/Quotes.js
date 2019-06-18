@@ -1,5 +1,5 @@
 export const getQuotes = () => {
-  return fetch('https://neelpatel05.pythonanywhere.com/', {
+  return fetch('https://cors-anywhere.herokuapp.com/https://neelpatel05.pythonanywhere.com/', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
